@@ -40,5 +40,5 @@ You can choose login with email or github/bitbucket/ etc...
 ```
 vercel
 ```
-#This command will launch deployment (after answering several config questions)
+# This command will launch deployment (after answering several config questions)
  the deployed app link will appear in cmd
