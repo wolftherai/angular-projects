@@ -1,4 +1,4 @@
-<div style="margin-top: 10%;margin-left: 5%;margin-bottom: 10%;margin-right:5%;" class="container">
+<div style="margin-top: 10%;margin-left: 15%;margin-bottom: 10%;margin-right:5%;" class="container">
   <div class="columns is-centered">
     <div class="box column is-one-third">
       <h1 class="title has-text-centered">Password Generator</h1>
@@ -6,7 +6,7 @@
       <div class="field">
         
         <label>Length</label>
-        <input class="input" type="number" min="1" max="100" (input)="onChangeLength($event)" />
+        <input class="input" type="number" min="1" max="100" (input)="onChangeLength($event.target)" [value]="password_length" />
       </div>
 
       <div class="field">

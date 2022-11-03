@@ -38,11 +38,11 @@ export class AppComponent {
     this.includeSymbols = !this.includeSymbols;
   }
 
-  onChangeLength(event: Event)
+  onChangeLength(eventTarget: EventTarget | null): void
   {
-    const parsedValue = parseInt((event.target as HTMLInputElement).value);
+    const parsedValue = parseInt((eventTarget as HTMLInputElement).value);
 
-    if (!isNaN(parsedValue)) { // check if the value is a number
+    if (Number.isInteger(parsedValue)) {
       this.password_length = parsedValue;
     }
   }
