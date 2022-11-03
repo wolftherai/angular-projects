@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## If you want to setup deployment:
+npm install -g vercel
+## then create acc at vercel.com and run
+vercel login
+## You can choose login with email or github/bitbucket/ etc...
+## After login just run `vercel`
+vercel
+## This command will launch deployment (after answering several config questions)
+## the deployed app link will appear in cmd
