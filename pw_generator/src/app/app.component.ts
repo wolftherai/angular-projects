@@ -12,6 +12,17 @@ export class AppComponent {
   includeNumbers = false;
   includeSymbols = false;
 
+  checkButtonState() : boolean
+  {
+    if (this.password_length > 0 && ( this.includeLetters || this.includeNumbers || this.includeSymbols))
+    {
+      return false;
+    }
+    else 
+    {
+      return true;
+    }
+  }
   onChangeUseLetters()
   {
     this.includeLetters = !this.includeLetters;
