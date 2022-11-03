@@ -33,12 +33,12 @@ If you want to setup deployment use `vercel` (`now` is depricated from 2020).
 ```
 npm install -g vercel
 ```
-## then create acc at vercel.com and run.
+Then create acc at vercel.com and run.
 ```
 vercel login
 ```
 You can choose login with email or github/bitbucket/ etc...
-## After login just run `vercel`
+After login just run `vercel`
 ```
 vercel
 ```
