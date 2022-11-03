@@ -1,33 +1,52 @@
-<h1> Password generator</h1>
+<div style="margin-top: 10%;margin-left: 5%;margin-bottom: 10%;margin-right:5%;" class="container">
+  <div class="columns is-centered">
+    <div class="box column is-one-third">
+      <h1 class="title has-text-centered">Password Generator</h1>
+      <body class="">
+      <div class="field">
+        
+        <label>Length</label>
+        <input class="input" type="number" min="1" max="100" (input)="onChangeLength($event)" />
+      </div>
 
-<div>
-  <label> Enter Length</label>
-  <input (input)="onChangeLength($event)" />
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input (change)="onChangeUseLetters()" type="checkbox" />
+            Use Letters
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input (change)="onChangeUseNumbers()" type="checkbox" />
+            Use Numbers
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input (change)="onChangeUseSymbols()" type="checkbox" />
+            Use Symbols
+          </label>
+        </div>
+      </div>
+
+      <button [disabled]="checkButtonState()"
+        (click)="onButtonClick()" class="button is-link is-fullwidth">
+        Generate!
+      </button>
+
+      <div class="box" *ngIf="password">
+        <label>Your Password</label>
+        <input class="input" [value]="password" />
+      </div>
+    </body>
+    </div>
+  
+  </div>
 </div>
-
-<div>
-  <label>Use Letters</label>
-  <input (change)="onChangeUseLetters()" type="checkbox"/>
-</div>
-
-
-<div>
-  <label>Use Numbers</label>
-  <input (change)="onChangeUseNumbers()" type="checkbox"/>
-</div>
-
-<div>
-  <label>Use Symbols</label>
-  <input (change)="onChangeUseSymbols()" type="checkbox"/>
-</div>
-
-<div>
-<button (click)="onButtonClick()">  Generate! </button>
-</div>
-
-<div>
-  <label>Your password: </label>
-  <input [value]="password"  />
-</div>
-
-{{ password }}
