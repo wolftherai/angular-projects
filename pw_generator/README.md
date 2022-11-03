@@ -35,10 +35,10 @@ npm install -g vercel
 ```
 vercel login
 ```
-## You can choose login with email or github/bitbucket/ etc...
+You can choose login with email or github/bitbucket/ etc...
 ## After login just run `vercel`
 ```
 vercel
 ```
-## This command will launch deployment (after answering several config questions)
-## the deployed app link will appear in cmd
+#This command will launch deployment (after answering several config questions)
+ the deployed app link will appear in cmd
