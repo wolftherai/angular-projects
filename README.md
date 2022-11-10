@@ -1,3 +1,3 @@
 # Angular-Projects
-CHECK DEPLOYED APP:
+CHECK DEPLOYED PASSWORD GENERATOR APP:
 https://pw-generator-wolftherai.vercel.app/
